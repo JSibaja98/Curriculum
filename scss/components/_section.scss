@@ -1,0 +1,60 @@
+.section {
+    text-align: center;
+    width: auto;
+    &__text {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    &__parrafo {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: justify;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__tittle {
+        position: relative;
+        // font-family: 'Monoton', cursive;
+        font-family: 'Nosifer', cursive;
+        font-weight: 400;
+        font-style: normal;
+        top: 250px;
+        z-index: 1;
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+    &__circle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("https://images.pexels.com/photos/3707669/pexels-photo-3707669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1880w");
+        background-attachment: fixed;
+        clip-path: circle(0px at center);
+    }
+    &__content {
+        background: rgba(255, 255, 255, 0.89);
+        padding: 15px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 32px;
+        &--about {
+            margin-top: 200vh;
+            justify-content: space-evenly;
+        }
+        &--skills {
+            margin-top: 100vh;
+        }
+        @media (min-width: 480px) {
+            height: 90vh;
+        }
+        @media ( min-height: 1200px) {
+            height: 60vh;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Proyecto-Individual",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "node-sass": "^4.14.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "scss": "node-sass --watch scss -o css --output-style expanded"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

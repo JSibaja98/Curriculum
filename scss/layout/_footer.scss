@@ -1,0 +1,21 @@
+.footer {
+    z-index: 1;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.89);
+    position: relative;
+    margin-top: 6%;
+    &__copyright {
+        font-size: 18px;
+        text-align: center;
+        color: #000;
+    }
+}
+
+.logo {
+    width: 80px;
+}
