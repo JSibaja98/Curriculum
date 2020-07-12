@@ -24,6 +24,18 @@
         font-size: 40px;
         text-align: center;
         width: 100%;
+        @media(min-width: 700px) {
+            font-size: 50px;
+        }
+        @media(min-width: 800px) {
+            font-size: 50px;
+        }
+        @media(min-width: 900px) {
+            font-size: 60px;
+        }
+        @media(min-width: 1004px) {
+            font-size: 70px;
+        }
     }
     &__circle {
         position: fixed;
@@ -47,7 +59,9 @@
             margin-top: 200vh;
             justify-content: space-evenly;
             align-items: center;
-            height: 90vh;
+            @media(min-width: 800px) {
+                height: 90vh;
+            }
         }
         &--skills {
             margin-top: 100vh;
