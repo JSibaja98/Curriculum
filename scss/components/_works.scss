@@ -1,9 +1,45 @@
-.box {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
+.works {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 50px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    &__face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__face1 {
+        box-sizing: border-box;
+        padding: 20px;
+        background: rgba(255, 255, 255, .3);
+    }
+    &__face2 {
+        transition: .5s;
+    }
+    &__card {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        box-shadow: 0 15px 15px rgba(123, 233, 242, .9);
+        &:hover {
+            .works__face2 {
+                height: 20px;
+                opacity: 0;
+            }
+        }
+    }
+    &__img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+    }
 }
