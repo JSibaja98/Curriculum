@@ -75,7 +75,7 @@ body.dark {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 10px;
   margin-bottom: 30px;
   width: 74%;
