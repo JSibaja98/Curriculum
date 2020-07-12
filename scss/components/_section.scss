@@ -36,7 +36,7 @@
         clip-path: circle(0px at center);
     }
     &__content {
-        background: rgba(255, 255, 255, 0.89);
+        background: $color-primero;
         padding: 15px;
         position: relative;
         border-radius: 32px;
@@ -58,6 +58,9 @@
             margin-top: 100vh;
             flex-wrap: wrap;
             flex-direction: row;
+        }
+        &.dark {
+            background: $color-segundo;
         }
     }
 }

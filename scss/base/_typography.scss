@@ -3,7 +3,10 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
-    // color: $color-secundario;
     min-width: 375px;
-    // background: $color-primario;
+    background: $color-quinto;
+    &.dark {
+        background: $color-tercero;
+        color: $color-quinto;
+    }
 }

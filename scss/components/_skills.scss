@@ -21,16 +21,20 @@
         height: 50px;
         position: relative;
         margin: 10px 0 10px 0;
-        background: rgba(255, 255, 255, .8);
+        background: $color-primero;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 20px;
         box-sizing: border-box;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+        box-shadow: 0 20px 50px $color-segundo;
         transform: translateY(-60px);
         opacity: 0;
         border-radius: 20px;
+        &.dark {
+            box-shadow: 0 20px 20px $color-octavo;
+            background: $color-segundo;
+        }
     }
     &__card {
         position: relative;

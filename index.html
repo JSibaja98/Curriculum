@@ -7,20 +7,23 @@
     <title>Jeancarlo Sibaja Fullstack Developer</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main class="section">
+        <button class="switch" id="switch">
+            <spam><i class="fas fa-sun"></i></spam>
+            <spam><i class="fas fa-moon"></i></spam>
+        </button>
         <h2 class="section__tittle">Jeancarlo Sibaja Ruiz</h2>
         <section id="section" class="section__circle"></section>
-        <section class="container section section__content section__content--about">
+        <section id="secDark" class="container section section__content section__content--about">
             <h2 class="section__text">Acerca de mi </h2>
             <p class="section__parrafo">Actualmente me encuentro cursando mi último año de la carrera de informática empresarial en la Universidad de Costa Rica, mis principales intereses en el ámbito de la informática son las bases de datos, programación web y escritorio, programación
                 movil, administración de proyectos. Soy una persona proactiva, creativa, responsable. </p>
         </section>
-        <section class=" container section section__content section__content--skills">
+        <section id="secDark2" class=" container section   section__content section__content--skills">
             <h2 class="section__text">Habilidades</h2>
             <section class="container contenedor">
                 <article class="contenedor__card">
@@ -221,7 +224,7 @@
             </section>
         </section>
 
-        <section class="container section section__content section__content--briefcase">
+        <section id="secDark3" class="container section section__content section__content--briefcase">
             <h2 class="section__text">Trabajos realizados </h2>
             <section class="container works">
 
@@ -300,6 +303,7 @@
             section.style.clipPath = "circle(" + value + "px at center)";
         })
     </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

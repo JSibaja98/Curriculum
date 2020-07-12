@@ -6,13 +6,15 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.89);
+    background: $color-primero;
     position: relative;
     margin-top: 6%;
     &__copyright {
         font-size: 18px;
         text-align: center;
-        color: #000;
+    }
+    &.dark {
+        background: $color-segundo;
     }
 }
 
