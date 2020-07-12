@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -124,10 +126,13 @@ body {
 .section__content--about {
   margin-top: 200vh;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .section__content--skills {
   margin-top: 100vh;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 @media (min-width: 480px) {
@@ -140,6 +145,15 @@ body {
   .section__content {
     height: 60vh;
   }
+}
+
+.contenedor {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .footer {

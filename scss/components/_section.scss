@@ -46,9 +46,12 @@
         &--about {
             margin-top: 200vh;
             justify-content: space-evenly;
+            align-items: center;
         }
         &--skills {
             margin-top: 100vh;
+            flex-wrap: wrap;
+            flex-direction: row;
         }
         @media (min-width: 480px) {
             height: 90vh;
